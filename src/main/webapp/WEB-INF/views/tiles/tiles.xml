@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 
+3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition"
+		template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header"
+			value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />
+	</definition>
+
+
+	<!-- **************************************************************************************** -->
+	<!-- Home Page -->
+	<definition name="admin-home-food" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/home/home.jsp" />
+	</definition>
+
+	<definition name="admin-view-product"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/home/productDetail.jsp" />
+	</definition>
+
+
+	<!-- **************************************************************************************** -->
+	<!-- Profile -->
+	<definition name="profile" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/userProfile/myProfile.jsp" />
+	</definition>
+
+	<definition name="profile-update" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/userProfile/profileUpdate.jsp" />
+	</definition>
+
+
+	<!-- **************************************************************************************** -->
+	<!-- User List Page -->
+	<definition name="admin-userList" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/userList.jsp" />
+	</definition>
+
+	<!-- User Search Page -->
+	<definition name="admin-user-search"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/userSearch.jsp" />
+	</definition>
+
+	<!-- Add/Update User Page -->
+	<definition name="admin-update-user"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/userUpdate.jsp" />
+	</definition>
+
+	<!-- User Detail Page -->
+	<definition name="admin-user-details"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/user/userDetails.jsp" />
+	</definition>
+
+
+	<!-- **************************************************************************************** -->
+	<!-- Food -->
+	<definition name="admin-food" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/food/foodList.jsp" />
+	</definition>
+
+	<definition name="admin-update-food"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/food/foodUpdate.jsp" />
+	</definition>
+
+	<definition name="admin-view-food" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/food/foodDetail.jsp" />
+	</definition>
+
+
+	<!-- **************************************************************************************** -->
+	<!-- Order -->
+	<definition name="admin-order" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orderList.jsp" />
+	</definition>
+
+	<definition name="admin-update-order"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orderUpdate.jsp" />
+	</definition>
+
+	<definition name="admin-order-details"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/orderDetail.jsp" />
+	</definition>
+
+	<definition name="admin-order-search"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/order/search.jsp" />
+	</definition>
+
+
+	<!-- **************************************************************************************** -->
+	<!-- Cart -->
+	<definition name="shop-shoppingCart"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/cart/shoppingCart.jsp" />
+	</definition>
+
+	<definition name="shop-checkOut" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/cart/checkOut.jsp" />
+	</definition>
+
+	<definition name="shoppingCartConfirmation"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/cart/shoppingCartConfirmation.jsp" />
+	</definition>
+
+	<definition name="shoppingCartFinalize"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/cart/shoppingCartFinalize.jsp" />
+	</definition>
+
+
+	<!-- **************************************************************************************** -->
+	<!-- Customer -->
+	<definition name="list-customer" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/customerList.jsp" />
+	</definition>
+
+	<definition name="view-customer" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/customerDetail.jsp" />
+	</definition>
+
+	<definition name="admin-update-customer"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/customer/customerUpdate.jsp" />
+	</definition>
+
+
+	<!-- **************************************************************************************** -->
+	<!-- MenuType -->
+	<definition name="admin-menuType" extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/menuType/menuList.jsp" />
+	</definition>
+
+	<definition name="admin-update-menu"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/menuType/menuUpdate.jsp" />
+	</definition>
+
+
+	<!-- **************************************************************************************** -->
+	<!-- Storage -->
+	<definition name="admin-storageList"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/storage/storageList.jsp" />
+	</definition>
+
+	<definition name="admin-update-storage"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/storage/storageUpdate.jsp" />
+	</definition>
+
+
+	<!-- **************************************************************************************** -->
+	<!-- Total Finance -->
+	<definition name="admin-totalFinanceList"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/totalFinance/totalFinanceList.jsp" />
+	</definition>
+
+	<definition name="admin-update-totalFinance"
+		extends="base-definition">
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/totalFinance/totalFinanceUpdate.jsp" />
+	</definition>
+
+</tiles-definitions>
